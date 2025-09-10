@@ -5,14 +5,10 @@ import { MdTimer } from "react-icons/md";
 import { ShowToast } from "@/Helpers/ShowToast";
 
 import Button from "@mui/material/Button";
-import Dialog, { DialogProps } from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
+import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
-import TextField from "@mui/material/TextField";
-import InputAdornment from "@mui/material/InputAdornment";
 import Backdrop from "@mui/material/Backdrop";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Box, ButtonGroup, Chip, Typography } from "@mui/material";
 
 interface Round {
     roundId: number;
@@ -168,18 +164,6 @@ export default function Dashboard() {
         }
     }
 
-    const textColorPayout = (item: any) => {
-        if (item?.status == "pending") {
-            return "text-[#F7CB73]"
-        }
-        else if (item?.status == "lost") {
-            return "text-[#d95656ff]"
-        }
-        else if (item?.status == "won") {
-            return "text-[#4fd77eff]"
-        }
-    }
-
     const bgGradient = (item: any) => {
         if (item?.resultColor === "green") {
             return "bg-[linear-gradient(45deg,#04b04c,#00D659)]"
@@ -239,16 +223,6 @@ export default function Dashboard() {
         },
     });
 
-    const normal = createTheme({
-        palette: {
-            primary: {
-                main: betData?.value,
-            },
-        },
-        typography: {
-            fontFamily: "Outfit",
-        },
-    });
 
     if (!round) return <div className="h-[80vh] w-[80vw] flex flex-col justify-center items-center" role="status">
         <svg aria-hidden="true" className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -6,6 +6,7 @@ import Button from "../ui/button/Button";
 import Input from "../form/input/InputField";
 import Label from "../form/Label";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function UserMetaCard() {
@@ -43,7 +44,7 @@ export default function UserMetaCard() {
               </div>
             </div>
             <div className="flex items-center order-2 gap-2 grow xl:order-3 xl:justify-end">
-              <a        
+              <Link         
         target="_blank"
         rel="noreferrer" href='https://www.facebook.com/PimjoHQ' className="flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-gray-300 bg-white text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50 hover:text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03] dark:hover:text-gray-200">
                 <svg
@@ -59,9 +60,9 @@ export default function UserMetaCard() {
                     fill=""
                   />
                 </svg>
-              </a>
+              </Link>
 
-              <a href='https://x.com/PimjoHQ' target="_blank"
+              <Link href='https://x.com/PimjoHQ' target="_blank"
         rel="noreferrer"  className="flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-gray-300 bg-white text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50 hover:text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03] dark:hover:text-gray-200">
                 <svg
                   className="fill-current"
@@ -76,9 +77,9 @@ export default function UserMetaCard() {
                     fill=""
                   />
                 </svg>
-              </a>
+              </Link>
 
-              <a href="https://www.linkedin.com/company/pimjo" target="_blank"
+              <Link href="https://www.linkedin.com/company/pimjo" target="_blank"
         rel="noreferrer" className="flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-gray-300 bg-white text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50 hover:text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03] dark:hover:text-gray-200">
                 <svg
                   className="fill-current"
@@ -93,9 +94,9 @@ export default function UserMetaCard() {
                     fill=""
                   />
                 </svg>
-              </a>
+              </Link>
 
-              <a href='https://instagram.com/PimjoHQ' target="_blank"
+              <Link href='https://instagram.com/PimjoHQ' target="_blank"
         rel="noreferrer" className="flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-gray-300 bg-white text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50 hover:text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03] dark:hover:text-gray-200">
                 <svg
                   className="fill-current"
@@ -110,7 +111,7 @@ export default function UserMetaCard() {
                     fill=""
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <button
